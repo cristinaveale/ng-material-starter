@@ -1,0 +1,59 @@
+@import '~@angular/material/theming';
+
+// Material Palettes
+$starter-primary: mat-palette($mat-blue);
+$starter-accent: mat-palette($mat-grey);
+$starter-warn: mat-palette($mat-red);
+
+// Material Themes
+$starter-theme: mat-light-theme(
+  $starter-primary,
+  $starter-accent,
+  $starter-warn
+);
+$starter-dark-theme: mat-dark-theme(
+  $starter-primary,
+  $starter-accent,
+  $starter-warn
+);
+
+// Colors
+$primary: mat-color(map-get($starter-theme, primary));
+$accent: mat-color(map-get($starter-theme, accent), 900);
+$warn: mat-color(map-get($starter-theme, warn));
+$light-blue: mat-color(map-get($starter-theme, primary), 100);
+$light-grey: mat-color(map-get($starter-theme, accent), 200);
+$medium-grey: mat-color(map-get($starter-theme, accent), 400);
+$dark-grey: mat-color(map-get($starter-theme, accent), 800);
+$dark-background: mat-color(
+  map-get($starter-dark-theme, background),
+  background
+);
+$light-background: mat-color(map-get($starter-theme, background), background);
+$black: #000;
+$white: #fff;
+
+// Typography
+$typography-config: mat-typography-config();
+$base-font-family: mat-font-family($typography-config);
+
+// Font Sizes
+$base-font-size: 16px;
+$small-font-size: 12px;
+
+// Font Weights
+$light-font-weight: 300;
+$base-font-weight: 400;
+$bold-font-weight: 500;
+
+// Line Heights
+$base-line-height: 1.25;
+$heading-line-height: $base-line-height;
+
+// Spacing
+$sub-baseline: 8px;
+$baseline: 16px;
+
+// Misc
+$header-height: 65px;
+$animation-duration: 250ms;
